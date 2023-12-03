@@ -1,31 +1,28 @@
 {
-  "name": "@skeet-framework/solana-utils",
-  "version": "0.2.5",
-  "description": "Skeet Framework Plugin - Solana Utils",
+  "name": "@skeet-framework/cloud-task",
+  "version": "0.1.1",
+  "description": "Skeet Framework Plugin - Cloud Task",
   "main": "dist/index.js",
   "types": "dist/src/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/elsoul/skeet-solana-utils.git"
+    "url": "https://github.com/elsoul/skeet-cloud-task.git"
   },
   "keywords": [
     "TypeScript",
     "Serverless",
-    "Solana",
-    "Web3js",
-    "Web3",
-    "Blockchain",
+    "CloudTask",
     "Skeet Plugin",
     "framework",
-    "Validator Tools"
+    "GCP"
   ],
   "author": "ELSOUL LABO B.V.",
   "license": "Apache-2.0",
   "private": false,
   "bugs": {
-    "url": "https://github.com/elsoul/skeet-solana-utils/issues"
+    "url": "https://github.com/elsoul/skeet-cloud-task/issues"
   },
-  "homepage": "https://elsoul.github.io/skeet-solana-utils",
+  "homepage": "https://elsoul.github.io/skeet-cloud-task",
   "scripts": {
     "test": "jest --coverage=false --detectOpenHandles --maxWorkers=1",
     "build": "yarn build-doc && npx ts-node build.ts && npx ts-node add-line.ts && tsc --emitDeclarationOnly",
@@ -37,11 +34,11 @@
     "discord": "npx ts-node -r tsconfig-paths/register --transpile-only ./.github/workflows/runDiscordChangeLog.ts"
   },
   "dependencies": {
-    "@google-cloud/tasks": "^4.1.0"
+    "@google-cloud/tasks": "4.1.0"
   },
   "devDependencies": {
-    "@skeet-framework/discord-utils": "^0.2.13",
-    "@skeet-framework/utils": "^1.2.3",
+    "@skeet-framework/discord-utils": "0.2.13",
+    "@skeet-framework/utils": "1.2.3",
     "@types/jest": "29.5.10",
     "@types/node": "20.9.4",
     "@types/node-fetch": "2.6.9",
